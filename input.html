@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT-FORM</title>
+    <style>
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+        }
+        .contact-form input {
+            padding: 10px;
+            border: 1px solid #cccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #cccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: aqua;
+            color: white;
+            font-size: 1rem;
+            border: 1px solid #cccc;
+            transition: 2s ease-in-out;
+        }
+        .contact-form button:hover {
+            cursor: pointer;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS A CONTACT FORM</h1>
+    <form class="contact-form">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your text" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>

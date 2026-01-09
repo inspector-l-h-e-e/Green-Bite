@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .navbar {
+            background-color: #064e3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+        }
+        .logo a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            font-family: 'playfair Display , serif';
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-family: 'playfair Display , serif';
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 900;
+            transition: 2s ease
+        }
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 30px;
+        }
+        .card img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .price {
+            text-align: center;
+            font-weight: 500;
+            font-family: monospace;
+        }
+        h3 {
+            font-size: 1rem;
+            margin-top: auto;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 20px;
+            margin-top: auto;
+        }
+        .price {
+            color: green;
+            font-weight: 800;
+        }
+        @media (max-width: 680px) {
+            .nav-links {
+        flex-direction: column;
+        padding: 10px;
+        gap: 3px;
+    }
+    .nav-links a {
+        font-size: 9px;
+    }
+    .logo a {
+        font-size: 1.5rem;
+    }
+    .hero {
+        text-align: center;
+        font-size: 0.5rem;
+        padding: 50% 30px;
+    }
+    .hero h1 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 0.8rem;   
+    }
+    .footer p {
+    opacity: 0.6;
+    font-size: 0.4em;
+    text-align: right;
+    }
+    .view-btn {
+    align-items: center;
+    font-size: 10px;
+    padding: 3px 5px 3px 5px;
+    }
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px 30px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    p {
+        text-align: center;
+        margin-top: auto;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 16px;
+    }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="./index.html">GreenBite</a></div>
+        <div class="nav-links">
+            <a href="./index.html">HOME</a>
+            <a href="./view-menu.html">MENU</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </div>
+    <h1>WELCOME TO OUR MENU</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./smoothie.jpg" alt="smothie-bowl">
+            <h3>Smoothie Bowl</h3>
+            <p>Fresh blended fruits topped with granola and seeds<br><span class="price">&#8358;8500</span></p>
+        </div>
+
+        <div class="card">
+            <img src="./avocado.jpg" alt="avocado">
+            <h3>Avocado Toast</h3>
+            <p>Creamy avocado on toasted whole-grain bread<br><span class="price">&#8358;12500</span></p>
+        </div>
+
+        <div class="card">
+            <img src="./detoxjuice.jpg" alt="detox-juice">
+            <h3>Green Detox Juice</h3>
+            <p>A refreshing mix of leafy geens and fruits<br><span class="price">&#8358;7500</span></p></p>
+        </div>
+
+        <div class="card">
+             <img src="./proteinsalad.jpg" alt="protein-salad">
+            <h3>Protein Salad</h3>
+            <p>Grilled veggies with protein packed toppings<br><span class="price">&#8358;6000</span></p>
+        </div>
+
+    </div>
+</body>
+</html>

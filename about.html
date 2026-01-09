@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+.navbar {
+    background-color: #064e3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'playfair Display , serif';
+}
+.nav-links {
+    background-color: #064e3b;
+    display: flex;
+    gap: 5px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bolder;
+    font-family: 'playfair Display , serif';
+}
+.hero {
+    text-align: center;
+    font-size: 1rem;
+    padding: 80px;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'playfair Display , serif';}
+p {
+    text-align: center;
+}
+.footer {
+    padding: 30px;
+    margin-top: 100px;
+}
+.footer p {
+    opacity: 0.6;
+    font-size: 0.8em;
+    text-align: right;
+}
+@media (max-width: 680px) {
+    .nav-links {
+        flex-direction: column;
+        padding: 10px;
+        gap: 3px;
+    }
+    .nav-links a {
+        font-size: 9px;
+    }
+    .logo a {
+        font-size: 1.5rem;
+    }
+    .hero {
+        text-align: center;
+        font-size: 0.5rem;
+        padding: 40% 30px;
+    }
+    .hero h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .hero p {
+        font-size: 1rem;   
+    }
+    .footer p {
+    opacity: 0.6;
+    font-size: 0.4em;
+    text-align: right;
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="navbar">
+        <div class="logo"><a href="./index.html">GreenBite</a></div>
+    <div class="nav-links">
+        <a href="./index.html">HOME</a>
+        <a href="./view-menu.html">MENU</a>
+        <a href="./about.html">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+    </div>
+   </div>
+   <section class="hero">
+   <h1>ABOUT US</h1> 
+   <p>GreenBite is a healthy food cafe focused on fresh ingredients and balanced meals for a better lifestyle.</p>
+   </section>
+
+   <footer class="footer">
+    <p>&copy; 2025 GreenBite. Eat clean. Live strong.<br>Designed by Inspectorlhee</p>
+   </footer>
+</body>
+</html>
