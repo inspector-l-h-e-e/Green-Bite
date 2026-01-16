@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+    background-color: #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-family: monospace;
+}
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    transition: 2s ease;
+}
+.nav-links a:hover {
+    cursor: pointer;
+    color: gray;
+}
+.hero {
+    background-color: #f8fafc;
+    text-align: center;
+    font-size: 1rem;
+    padding: 30px;
+    height: 100vh;
+}
+        h1 {
+            text-align: center;
+            font-style: italic;
+            font-style: 3.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card img {
+            height: 300px;
+            width: 100%;
+        }
+        .price {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 0 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 3px 5px;
+        }
+        .price {
+            color: green;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        @media (max-width: 680px) {
+            .nav-links {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+    .logo a {
+        font-size: 1.5rem;
+    }
+    h1 {font-size: 1rem;}
+    h3 {
+        font-size: 0.9rem;
+    }
+    .hero p {
+        font-size: 1rem;   
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .card img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+    }
+    
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="./index.html">GreenBite</a></div>
+        <div class="nav-links">
+            <a href="./index.html">HOME</a>
+            <a href="./view-menu.html">MENU</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </div>
+    <section class="hero">
+    <h1>WELCOME TO OUR MENU</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./smoothie.jpg" alt="smothie-bowl">
+            <h3>Smoothie Bowl</h3>
+            <p>Fresh blended fruits topped with granola and seeds.<br><span class="price">&#8358;8500</span></p>
+        </div>
+
+        <div class="card">
+            <img src="./avocado.jpg" alt="avocado">
+            <h3>Avocado Toast</h3>
+            <p>Creamy avocado on toasted whole-grain bread.<br><span class="price">&#8358;12500</span></p>
+        </div>
+
+        <div class="card">
+            <img src="./detoxjuice.jpg" alt="detox-juice">
+            <h3>Green Detox Juice</h3>
+            <p>A refreshing mix of leafy geens and fruits.<br><span class="price">&#8358;7500</span></p></p>
+        </div>
+
+        <div class="card">
+             <img src="./proteinsalad.jpg" alt="protein-salad">
+            <h3>Protein Salad</h3>
+            <p>Grilled veggies with protein packed toppings.<br><span class="price">&#8358;6000</span></p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
